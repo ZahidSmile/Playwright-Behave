@@ -57,7 +57,3 @@ playwright-behave-framework/
 ## Contributing
 
 Contributions to the Playwright Behave framework are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
----
-
-Feel free to customize this README file according to your specific framework setup, requirements, and preferences. Happy testing! Regards Zahid Ismail
