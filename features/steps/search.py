@@ -1,33 +1,39 @@
 from behave import *
-from behave.api.async_step import async_run_until_complete
 from selenium.common.exceptions import NoSuchElementException
+from behave.api.async_step import async_run_until_complete
 
 
-@given("the user is on the login page")
+@given('I am on search field')
 @async_run_until_complete
 async def step_impl(context):
-    await context.page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    context.page.wait_for_timeout(3000)
+    await context.page.wait_for_selector('.oxd-input')
 
 
-@when('the user enters "{username}" and "{password}"')
-@async_run_until_complete
-async def step_impl(context, username, password):
-    await context.page.fill('input[name="username"]', username)
-    await context.page.fill('input[name="password"]', password)
-
-
-@then('the user should be logged in successfully')
+@when("I search admin")
 @async_run_until_complete
 async def step_impl(context):
-    loginbtn = context.page.locator(".orangehrm-login-button")
-    await loginbtn.click()
+    await context.page.fill('.oxd-input', 'admin')
+
+
+@step("I clicked on admin")
+@async_run_until_complete
+async def step_impl(context):
+    await context.page.get_by_role("link", name="Admin").click()
+
+
+@then("I successfully landed on admin panel")
+@async_run_until_complete
+async def step_impl(context):
+    # context.page.locator("div").filter(has_text=re.compile(r"^AdminUser Management$")).click()
     context.page.wait_for_timeout(3000)
     try:
         header = context.page.locator('.oxd-userdropdown')
-        if await header.is_visible():
+        if header.is_visible():
             await header.click()
             logout = context.page.locator( "div.oxd-topbar-header li:nth-child(4) a")
             await logout.click()
     except NoSuchElementException:
         # Handle the case where the header is not found (e.g., log a message)
         print("Header not found. Skipping logout.")
+

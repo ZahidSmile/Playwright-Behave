@@ -6,7 +6,7 @@ Welcome to the Playwright Behave framework! This framework combines the power of
 
 - **Behavior-Driven Development (BDD)**: Write test scenarios in a human-readable format using Gherkin syntax, allowing collaboration between technical and non-technical stakeholders.
 - **Powerful Browser Automation**: Utilize the capabilities of Playwright to automate browser interactions across different browsers (Chromium, WebKit, and Firefox).
-- **Flexible Fixture Support**: Define fixtures for setting up and tearing down browser environments, making it easy to organize and manage test setup and cleanup tasks.
+- **Flexible Fixture Support**: define fixtures for setting up and tearing down browser environments, making it easy to organize and manage test setup and cleanup tasks.
 - **Integration with Behave**: Seamlessly integrate Playwright with Behave to leverage the rich ecosystem of Behave for test execution, reporting, and management.
 
 ## Getting Started
@@ -27,7 +27,7 @@ To get started with the Playwright Behave framework, follow these steps:
 
 3. **Write Test Scenarios**: Write your test scenarios using Gherkin syntax in feature files located in the `features` directory.
 
-4. **Define Step Definitions**: Implement step definitions for your test scenarios in Python files located in the `features/steps` directory. Use Playwright to automate browser interactions within your step definitions.
+4. **define Step definitions**: Implement step definitions for your test scenarios in Python files located in the `features/steps` directory. Use Playwright to automate browser interactions within your step definitions.
 
 5. **Execute Tests**: Run your tests using Behave:
 

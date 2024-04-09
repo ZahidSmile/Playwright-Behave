@@ -8,13 +8,8 @@ Feature: User login
     And I click the login button
     Then I should be redirected to the dashboard
 
-  Scenario Outline: Login with different credentials
-    Given the user is on the login page
-    When the user enters "<username>" and "<password>"
-    Then the user should be logged in successfully
-
-    Examples:
-    | username | password |
-    | user1    | pass123  |
-    | Admin    | admin123  |
-    | Admin2    | admin1234  |
+  Scenario:
+  Given I am on search field
+  When I search admin
+  And I clicked on admin
+  Then I successfully landed on admin panel
