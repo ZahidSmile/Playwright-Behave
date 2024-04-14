@@ -1,17 +1,21 @@
-from behave import fixture, use_fixture
-from playwright.async_api import async_playwright
-from behave.api.async_step import async_run_until_complete
+from playwright.sync_api import sync_playwright
 
 
-@fixture
-async def browser_chrome(context):
-    p = await async_playwright().start()
-    browser = await p.chromium.launch(headless=False, slow_mo=500, channel="chrome")  # Launching Chromium browser
-    context.page = await browser.new_page()
-    await context.page.set_viewport_size({"width": 1920, "height": 1080})
-    return context.page
+def before_feature(context, feature):
+    context.browsers = {}  # Dictionary to store browser instances
+    context.playwright_instance = sync_playwright().start()  # Start Playwright instance
+    browser_type = "chromium"  # Change this according to your requirement
+
+    # Launch Playwright browser instance
+    browser = context.playwright_instance[browser_type].launch(headless=False, slow_mo=500, channel="chrome")
+    context.browsers[browser_type] = browser
+    context.page = browser.new_page()
 
 
-@async_run_until_complete
-async def before_feature(context, feature):
-    await use_fixture(browser_chrome, context)
+def after_feature(context, feature):
+    # Close all browser instances
+    for browser in context.browsers.values():
+        browser.close()
+
+    # Stop Playwright instance
+    context.playwright_instance.stop()
