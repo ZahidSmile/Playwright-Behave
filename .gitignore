@@ -8,5 +8,6 @@ env/
 # Ignore IDE files
 .vscode/
 .idea/
+.idea/*
 
 features/__pycache__/
