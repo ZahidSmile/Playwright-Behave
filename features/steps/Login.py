@@ -1,23 +1,23 @@
 from behave import given, when, then
+from pages.Orangehrm_page import Orangehrm_page
 
 
 @given('I am on the login page')
 def step_impl(context):
-    context.page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    context.page = Orangehrm_page(context.page)
+    context.page.goto_page()
 
 
 @when('I enter valid credentials')
 def step_impl(context):
-    context.page.fill('input[name="username"]', 'Admin')
-    context.page.fill('input[name="password"]', 'admin123')
+    context.page.add_credentials()
 
 
 @when('I click the login button')
 def step_impl(context):
-    loginbtn = context.page.locator('.orangehrm-login-button')
-    loginbtn.click()
+    context.page.submit_the_form()
 
 
 @then('I should be redirected to the dashboard')
 def step_impl(context):
-    assert context.page.url == 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index'
+    context.page.check_data()
