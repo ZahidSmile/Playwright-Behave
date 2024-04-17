@@ -2,7 +2,7 @@ import time
 from pages.basepage import BasePage
 
 
-class Orangehrm_page(BasePage):
+class OrangehrmPage(BasePage):
 
     def __init__(self, page):
         super().__init__(page)

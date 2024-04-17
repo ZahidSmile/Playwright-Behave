@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="1b70089e-7a42-4096-be2c-5601eed568c2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/demo.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/orangehrm_login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/demo2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/scenario_outline.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/orangeHRM_login.step.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/google_step.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/google_step.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/one2many.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/scenario_outline_step.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/orangehrm_search_step.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/basepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Orangehrm_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/orangehrm_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/google_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/google_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/zahid/snap/BehaveBDDHybridFrameworkWithPageObjectModel",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
   <component name="RecentsManager">

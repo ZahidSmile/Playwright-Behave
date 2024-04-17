@@ -1,10 +1,10 @@
 from behave import given, when, then, step
-from pages.Orangehrm_page import Orangehrm_page
+from pages.orangehrm_page import OrangehrmPage
 
 
 @given('I am on the login page')
 def login(context):
-    context.page = Orangehrm_page(context.page)
+    context.page = OrangehrmPage(context.page)
     context.page.goto_page()
 
 
