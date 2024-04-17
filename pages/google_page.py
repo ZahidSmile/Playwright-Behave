@@ -13,4 +13,3 @@ class GooglePage:
 
     def verify_search(self):
         assert self.page.title() == 'Playwright - Google Search'
-

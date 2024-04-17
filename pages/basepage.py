@@ -39,7 +39,7 @@ class BasePage:
 
     def retrieved_element_text_equals(self, locator_type, locator_value, expected_text):
         element = self.get_element(locator_type, locator_value)
-        return element.text() == expected_text
+        return element.text_content() == expected_text
 
     def display_status(self, locator_type, locator_value):
         element = self.get_element(locator_type, locator_value)

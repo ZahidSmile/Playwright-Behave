@@ -1,5 +1,5 @@
 import time
-from pages.BasePage import BasePage
+from pages.basepage import BasePage
 
 
 class Orangehrm_page(BasePage):
