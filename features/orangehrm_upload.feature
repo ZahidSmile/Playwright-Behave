@@ -1,5 +1,4 @@
-Feature: I want to test the
-  Profile Picture functionality
+Feature: I want to test the Profile Picture functionality
 
   Scenario: Uploading profile picture with valid data
     Given I am on profile page

@@ -1,6 +1,7 @@
-Feature: User login
-  With positive & negative
-  test cases
+Feature: User login With positive & negative test cases
+
+  Scenario: Performing Logout if User is Already Logged In
+  When User is Already Logged In Performed Logout
 
   Scenario Outline: Login with different credentials
     Given the user is on the login page

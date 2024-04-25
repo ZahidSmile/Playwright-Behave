@@ -11,3 +11,4 @@ env/
 .idea/*
 
 features/__pycache__/
+cred.json
