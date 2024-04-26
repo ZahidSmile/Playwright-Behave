@@ -20,16 +20,13 @@ class OrangehrmPage(BasePage):
         self.page.wait_for_load_state()
         username = data.get('username')
         password = data.get('password')
-        self.display_status('css', '[name="username"]')
-        self.type_into_element('name', 'username', username)
-        self.type_into_element('name', 'password', password)
+        self.select_by_placeholder('Username').fill(username)
+        self.select_by_placeholder('Password').fill(password)
 
     def submit_the_form(self):
-        if self.display_status('class_name', 'orangehrm-login-button'):
-            self.click_on_element('css', '.orangehrm-login-button')
+        self.select_by_role('button','Login')
+        self.get_element('css', '.oxd-button').click()
 
     def check_data(self):
         time.sleep(2)
         assert self.verify_page_title('OrangeHRM')
-
-

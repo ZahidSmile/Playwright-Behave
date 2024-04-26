@@ -1,5 +1,6 @@
 import os
 import time
+from playwright.sync_api import expect
 
 
 class BasePage:
@@ -54,3 +55,20 @@ class BasePage:
         # Upload the file to the element
         self.page.set_input_files(locator_value, file_path)
         return file_path
+
+    def select_by_role(self, role_name, role_value):
+        element = expect(self.page.get_by_role(role_name, name=role_value)).to_be_visible()
+        return element
+
+    def select_by_text(self, text_value):
+        element = expect(self.page.get_by_text(text_value)).to_be_visible()
+        return element
+
+    #
+    def select_by_placeholder(self, placeholder_value):
+        element = self.page.get_by_placeholder(placeholder_value)
+        return element
+
+    def select_by_alt_text(self, alt_text):
+        element = self.page.get_by_alt_text(alt_text)
+        return element

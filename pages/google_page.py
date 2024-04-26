@@ -7,8 +7,8 @@ class GooglePage:
     def open_page(self):
         self.page.goto('https://www.google.com/')
 
-    def search_on_page(self):
-        self.page.fill('#APjFqb', 'Playwright')
+    def search_on_page(self, keyword):
+        self.page.fill('#APjFqb', keyword)
         self.page.press('#APjFqb', 'Enter')
 
     def verify_search(self):

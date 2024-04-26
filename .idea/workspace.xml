@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b70089e-7a42-4096-be2c-5601eed568c2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/orangehrm_login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/orangehrm_login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/orangehrm_upload.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/orangehrm_upload.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/scenario_outline.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/scenario_outline.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/orangehrm_search_step.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/orangehrm_search_step.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/scenario_outline_step.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/scenario_outline_step.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/google_search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/google_search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/google_step.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/google_step.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/basepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/google_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/google_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/orangehrm_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/orangehrm_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/orangehrm_upload_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/orangehrm_upload_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

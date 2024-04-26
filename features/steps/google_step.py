@@ -8,9 +8,9 @@ def opening_browser(context):
     context.browser.open_page()
 
 
-@when('I searched Playwright')
-def searching_on_page(context):
-    context.browser.search_on_page()
+@when('I searched "{keyword}"')
+def searching_on_page(context, keyword):
+    context.browser.search_on_page(keyword)
 
 
 @then('Search should be displayed')
