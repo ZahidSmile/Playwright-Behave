@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1b70089e-7a42-4096-be2c-5601eed568c2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/google_search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/google_search.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/google_step.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/google_step.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/orangehrm_login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/orangehrm_login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/basepage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/google_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/google_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/orangehrm_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/orangehrm_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,20 +36,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.browser.executor": "Run",
-    "Python.html_report.executor": "Run",
-    "Python.test (1).executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test4fun.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zahid/snap/BehaveBDDHybridFrameworkWithPageObjectModel",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.browser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.html_report.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test4fun.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zahid/snap/BehaveBDDHybridFrameworkWithPageObjectModel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/features" />

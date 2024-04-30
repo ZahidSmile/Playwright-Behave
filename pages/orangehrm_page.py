@@ -25,7 +25,6 @@ class OrangehrmPage(BasePage):
 
     def submit_the_form(self):
         self.select_by_role('button','Login')
-        self.get_element('css', '.oxd-button').click()
 
     def check_data(self):
         time.sleep(2)

@@ -12,7 +12,7 @@ class BasePage:
 
     def click_on_element(self, locator_type, locator_value):
         element = self.get_element(locator_type, locator_value)
-        element.click()
+        element.first.click()
 
     def verify_page_title(self, expected_title):
         return self.page.title() == expected_title
@@ -20,7 +20,7 @@ class BasePage:
     def type_into_element(self, locator_type, locator_value, text_to_entered):
         element = self.get_element(locator_type, locator_value)
         element.click()
-        element.fill(text_to_entered)
+        element.first.fill(text_to_entered)
 
     def get_element(self, locator_type, locator_value):
         switcher = {
@@ -58,10 +58,12 @@ class BasePage:
 
     def select_by_role(self, role_name, role_value):
         element = expect(self.page.get_by_role(role_name, name=role_value)).to_be_visible()
+        self.page.get_by_role(role_name, name=role_value).first.click()
         return element
 
     def select_by_text(self, text_value):
         element = expect(self.page.get_by_text(text_value)).to_be_visible()
+        self.page.get_by_text(text_value).frist.click()
         return element
 
     #

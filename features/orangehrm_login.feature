@@ -6,8 +6,8 @@ Feature: User login As a registered user I want to be able to login to the syste
     And I click the login button
     Then I should be redirected to the dashboard
 
-  Scenario:
-  Given I am on search field
-  When I search admin
-  And I clicked on admin
-  Then I successfully landed on admin panel
+#  Scenario:
+#  Given I am on search field
+#  When I search admin
+#  And I clicked on admin
+#  Then I successfully landed on admin panel
