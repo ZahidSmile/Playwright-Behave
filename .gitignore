@@ -12,3 +12,4 @@ env/
 
 features/__pycache__/
 cred.json
+pages/practice_file.py

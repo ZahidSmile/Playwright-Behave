@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b70089e-7a42-4096-be2c-5601eed568c2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/orangehrm_login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/orangehrm_login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/basepage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/orangehrm_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/orangehrm_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
