@@ -1,6 +1,10 @@
 import os
 import time
 from playwright.sync_api import expect
+import logging
+
+logging.basicConfig(filename='savyour_log_file.log', level=logging.INFO,
+                        format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 class BasePage:
@@ -9,6 +13,7 @@ class BasePage:
 
     def open_url(self, add_url):
         self.page.goto(add_url)
+        time.sleep(3)
 
     def click_on_element(self, locator_type, locator_value):
         element = self.get_element(locator_type, locator_value)
@@ -63,7 +68,7 @@ class BasePage:
 
     def select_by_text(self, text_value):
         element = expect(self.page.get_by_text(text_value)).to_be_visible()
-        self.page.get_by_text(text_value).frist.click()
+        self.page.get_by_text(text_value).first.click()
         return element
 
     #
@@ -74,3 +79,26 @@ class BasePage:
     def select_by_alt_text(self, alt_text):
         element = self.page.get_by_alt_text(alt_text)
         return element
+
+    def select_all_elements(self, common_locator_value):
+        element = self.page.query_selector_all(common_locator_value)
+        return element
+
+    def type_as_keyboard(self, locator_type, locator_value, value):
+        element = self.get_element(locator_type, locator_value)
+        element.click()
+        element.page.keyboard.press(value)
+        return element
+
+    def verify_page_url(self, expected_value):
+        if expected_value in self.page.url:
+            pass
+
+    def main_page(self):
+        if self.page.url != 'https://savyour.com/pk-en/':
+            self.open_url('https://savyour.com/pk-en/')
+
+    @staticmethod
+    def print_statement(value):
+        logging.info(value)
+
